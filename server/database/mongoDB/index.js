@@ -8,7 +8,7 @@ module.exports = {
       return;
     }
     // connection to mongo database
-    mongoClient.connect("mongodb://localhost:27017/YOUR_DATABASE_NAME_HERE", function(err, db){
+    mongoClient.connect("mongodb://localhost:27017/CHATBOT_DATABASE", function(err, db){
       if(err!==null){
         throw err;
       }

@@ -14,3 +14,8 @@
 * start writing info.json at 1108
 * finished writing `fauna.json`, `flora.json` and `nationalParks.json` in info at 1243
 * **ended at 1243 07-11-2017**
+
+* **started at 1804 on 07-11-2017**
+* start writing code to save info inside database at 1804
+* finished code for updating database at 1823
+* 
