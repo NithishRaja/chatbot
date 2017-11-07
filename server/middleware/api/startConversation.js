@@ -1,4 +1,5 @@
 var ConversationV1 = require("watson-developer-cloud/conversation/v1");
+var mongo = require("mongodb");
 
 module.exports = function(req, res){
 
@@ -17,10 +18,17 @@ module.exports = function(req, res){
     if(error){
       res.status(500).json(error);
     }else{
-      req.session.conversationContext = response.context;
-      req.session.conversationStack = [{"source": "chatbot", "text": response.output.text}];
-      console.log(req.session);
-      res.status(200).json(response);
+      var parks = [];
+      var parksCollection = mongo.DB.collection("national_parks");
+      parksCollection.find({}, { "_id": false, "name": true }).toArray(function(err, result){
+        result.map(function(park){
+          parks.push(park.name);
+        });
+        response.context.parks = parks;
+        req.session.conversationContext = response.context;
+        req.session.conversationStack = [{"source": "chatbot", "text": response.output.text}];
+        res.status(200).json(response);
+      });
     }
   });
 };
