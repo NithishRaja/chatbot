@@ -1,0 +1,32 @@
+[
+  {
+    "name": "dessert national park",
+    "location": "rajasthan, india",
+    "desc": "Desert National Park, Rajasthan, India, is situated in the west Indian state of Rajasthan near the town of Jaisalmer. This is one of the largest national parks, covering an area of 3162 km². The Desert National Park is an excellent example of the ecosystem of the Thar Desert. Sand dunes form around 20% of the Park. The major landform consists of craggy rocks and compact salt lake bottoms, intermedial areas and fixed dunes. Despite a fragile ecosystem there is an abundance of birdlife. The region is a haven for migratory and resident birds of the desert.",
+    "image": "http://4.bp.blogspot.com/-wf9knpF3iQI/UMSxRL9JujI/AAAAAAAADq4/tHOrYO6HZr0/s1600/Desert-National-Park-Jaisalmer-rajasthan.jpg"
+  },
+  {
+    "name": "gulf of mannar, marine national park",
+    "location": "east cost of TN, india",
+    "desc": "The Gulf of Mannar Marine National Park is a protected area of India consisting of 21 small islands and adjacent coral reefs in the Gulf of Mannar in the Indian Ocean. It lies 1 to 10 km away from the east coast of Tamil Nadu, South India for 160 km between Thoothukudi and Dhanushkodi. It is the core area of the Gulf of Mannar Biosphere Reserve which includes a 10 km buffer zone around the park, including the populated coastal area. The park has a high diversity of plants and animals in its marine, intertidal and near shore habitats. Public access inside the Park is limited to glass bottom boat rides.",
+    "image": "http://tripmonkey.net/wp-content/uploads/2017/04/Gulf-of-Mannar-coral-reef-islands-Marine-National-Park-Tamil-Nadu-India.jpg"
+  },
+  {
+    "name": "Periyar National Park",
+    "location": "Kerala, India",
+    "desc": "Periyar National Park and Wildlife Sanctuary is notable as an elephant reserve and a tiger reserve. The park is a repository of rare, endemic and endangered flora and fauna and forms the major watershed of two important rivers of Kerala, the Periyar and the Pamba.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Periyar_National_Park.JPG/300px-Periyar_National_Park.JPG"
+  },
+  {
+    "name": "Vedanthangal Bird Sanctuary",
+    "location": "Kancheepuram District of the state of Tamil Nadu, India",
+    "desc": "Vedanthangal is home to migratory birds such as pintail, garganey, grey wagtail, blue-winged teal, common sandpiper and the like. Vedanthangal is the oldest water bird sanctuary in the country. Vedanthangal in Tamil language means 'hamlet of the hunter'. This area was a favourite hunting spot of the local landlords in the early 18th century. The region attracted a variety of birds because it was dotted with small lakes that acted as feeding grounds for the birds.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Vedanthangal_Lake.JPG/250px-Vedanthangal_Lake.JPG"
+  },
+  {
+    "name": "Sariska Tiger Reserve",
+    "location": " Alwar district of the state of Rajasthan, India",
+    "desc": "Sariska Tiger Reserve is a national park and tiger reserve. This area was a hunting preserve of the Alwar state and it was declared a wildlife reserve in 1955. It was given the status of a tiger reserve making it a part of India's Project Tiger in 1978. The wildlife sanctuary covers an area of 866 km2. The reserve was declared a national park in 1982, with a total area of about 273.8 km2. It is the first reserve in the world to have successfully relocated tigers.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Deer_in_Sariska_Reserve.jpg/300px-Deer_in_Sariska_Reserve.jpg"
+  }
+]

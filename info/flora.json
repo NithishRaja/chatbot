@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Vachellia leucophloea",
+    "park": "dessert national park",
+    "desc": "Vachellia leucophloea, also called reonja, is a moderate sized tree found in southern India. It attains a height of about 20 to 30 ft and a girth of 2 to 3 ft.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Acacia_leucophloea_flowering_in_Vanasthalipuram%2C_Hyderabad%2C_AP_W_IMG_9224.jpg/220px-Acacia_leucophloea_flowering_in_Vanasthalipuram%2C_Hyderabad%2C_AP_W_IMG_9224.jpg"
+  },
+  {
+    "name": "Arecaceae",
+    "park": "dessert national park",
+    "desc": "The Arecaceae are a botanical family of perennial climbers, shrubs, acaules and trees commonly known as palm trees. They are flowering plants, a family in the monocot order Arecales.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/1859-Martinique.web.jpg/220px-1859-Martinique.web.jpg"
+  },
+  {
+    "name": "Bruguiera",
+    "park": "gulf of mannar, marine national park",
+    "desc": "Bruguiera is a plant genus in the family Rhizophoraceae. It is a small genus of six mangrove species of the Indian and west Pacific Ocean region.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Bruguiera_gymnorrhiza00.jpg/220px-Bruguiera_gymnorrhiza00.jpg"
+  },
+  {
+    "name": "Rhizophora",
+    "park": "gulf of mannar, marine national park",
+    "desc": "Rhizophora is a genus of tropical mangrove trees, sometimes collectively called true mangroves. The most notable species is the red mangrove but some other species and a few natural hybrids are known.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Rhizophora_mangle.jpg/220px-Rhizophora_mangle.jpg"
+  },
+  {
+    "name": "Avicennia",
+    "park": "gulf of mannar, marine national park",
+    "desc": "Avicennia is a genus of flowering plants currently placed in the bear's breeches family, Acanthaceae. It contains mangrove trees, which occur in the intertidal zones of estuarine areas and are characterized by aerial roots.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Avicennia_germinans.jpg/220px-Avicennia_germinans.jpg"
+  },
+  {
+    "name": "Banyan",
+    "park": "Periyar National Park",
+    "desc": "A banyan, also spelled 'banian', is a fig that begins its life as an epiphyte, i.e., a plant that grows on another plant, when its seed germinates in a crack or crevice of a host tree or human edifice.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Big_Banyan_Tree_at_Bangalore.jpg/220px-Big_Banyan_Tree_at_Bangalore.jpg"
+  },
+  {
+    "name": "Ficus religiosa",
+    "park": "Periyar National Park",
+    "desc": "Ficus religiosa or sacred fig is a species of fig native to the Indian subcontinent, and Indochina. It belongs to the Moraceae, the fig or mulberry family. It is also known as the bodhi tree, pippala tree, peepul tree, peepal tree or ashwattha tree.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ficus_religiosa_Bo.jpg/220px-Ficus_religiosa_Bo.jpg"
+  },
+  {
+    "name": "Bamboo",
+    "park": "Periyar National Park",
+    "desc": "The bamboos are evergreen perennial flowering plants in the subfamily Bambusoideae of the grass family Poaceae. In bamboo, as in other grasses, the internodal regions of the stem are usually hollow and the vascular bundles in the cross section are scattered throughout the stem instead of in a cylindrical arrangement.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/2288_-_bamboo_-_Alain_Van_den_Hende_17072288_Licence_CC_BY-NC-SA-3.0.jpg/320px-2288_-_bamboo_-_Alain_Van_den_Hende_17072288_Licence_CC_BY-NC-SA-3.0.jpg"
+  },
+  {
+    "name": "Vachellia nilotica",
+    "park": "Vedanthangal Bird Sanctuary",
+    "desc": "Vachellia nilotica commonly known as gum arabic tree, babul, thorn mimosa, Egyptian acacia or thorny acacia is a tree in the family Fabaceae. It is native to Africa, the Middle East and the Indian subcontinent. It is also currently an invasive species of significant concern in Australia.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Babool_%28Acacia_nilotica%29_flowers_at_Hodal_W_IMG_1163.jpg/220px-Babool_%28Acacia_nilotica%29_flowers_at_Hodal_W_IMG_1163.jpg"
+  },
+  {
+    "name": "Barringtonia acutangula",
+    "park": "Vedanthangal Bird Sanctuary",
+    "desc": "Barringtonia acutangula is a species of Barringtonia native to coastal wetlands in southern Asia and northern Australasia, from Afghanistan east to the Philippines and Queensland. Common names include freshwater mangrove, itchytree and mango-pine.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/L%E1%BB%99c_v%E1%BB%ABng.jpg/220px-L%E1%BB%99c_v%E1%BB%ABng.jpg"
+  },
+  {
+    "name": "Alangium salvifolium",
+    "park": "Vedanthangal Bird Sanctuary",
+    "desc": "Alangium salviifolium, commonly known as sage-leaved alangium, is a flowering plant in the Cornaceae family. It is also commonly known as Ankolam in Malayalam, Ankola in Kannada, Akola or Ankol in Hindi and Alanji in Tamil. In India, Its mostly found in dry regions in plains and low hills and also found on roadsides.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEpA0_ggE9DfHikPEQ7Uy0yUJI8EGFkwyTH99dgZBrpbAY_QF"
+  },
+  {
+    "name": "Boswellia serrata",
+    "park": "Sariska Tiger Reserve",
+    "desc": "Boswellia serrata is a plant that produces Indian frankincense, Salai, referred to in Sanskrit as shallaki and in Latin as Olibanum Indicum. the plant is native to much of India and the Punjab region that extends into Pakistan.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Boswellia_serrata_%28Salai%29_in_Kinnarsani_WS%2C_AP_W2_IMG_5840.jpg/220px-Boswellia_serrata_%28Salai%29_in_Kinnarsani_WS%2C_AP_W2_IMG_5840.jpg"
+  },
+  {
+    "name": "Butea monosperma",
+    "park": "Sariska Tiger Reserve",
+    "desc": "Butea monosperma is a species of Butea native to tropical and sub-tropical parts of the Indian Subcontinent and Southeast Asia, ranging across India, Bangladesh, Nepal, Sri Lanka, Myanmar, Thailand, Laos, Cambodia, Vietnam, Malaysia, and western Indonesia. Common names include flame-of-the-forest and bastard teak.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/STS_001_Butea_monosperma.jpg/220px-STS_001_Butea_monosperma.jpg"
+  },
+  {
+    "name": "Lannea coromandelica",
+    "park": "Sariska Tiger Reserve",
+    "desc": "Lannea coromandelica, also known as the Indian ash tree, is a species of tree in the family Anacardiaceae that grows in South and Southeast Asia, ranging from Sri Lanka to Southern China. It most commonly grows in exposed dry woodland environments, where the tree is smaller and more crooked. In more humid environments it is a larger spreading tree that can become 20 meters tall.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Lannea_coromandelica_%28Wodier_Tree%29_in_Hyderabad_W2_IMG_5634.jpg/220px-Lannea_coromandelica_%28Wodier_Tree%29_in_Hyderabad_W2_IMG_5634.jpg"
+  }
+]

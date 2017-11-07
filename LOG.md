@@ -9,3 +9,8 @@
 * wrote code to initiate conversation at 0958
 * finished boilerplate code for sending and receiving text from chatbot api at 1017
 * **ended at 1017 on 07-11-2017**
+
+* **started at 1108 on 07-11-2017**
+* start writing info.json at 1108
+* finished writing `fauna.json`, `flora.json` and `nationalParks.json` in info at 1243
+* **ended at 1243 07-11-2017**
