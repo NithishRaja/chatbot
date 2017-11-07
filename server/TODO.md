@@ -1,6 +1,7 @@
 # TODO
 
 * write api routes
+* make sendMessage route listen to POST requests
 * add functionality to send and receive messages
 * store context in session
 * store conversation in session
