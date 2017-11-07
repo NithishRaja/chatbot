@@ -4,4 +4,6 @@
 * install `dotenv`, `watson-developer-cloud` and `underscore` at 0908
 * wrote boilerplate for `/api/startConversation` and `/api/sendMessage` route at 0926
 * refactor api routes into separate middleware at 0931
+* error: dotenv does not read from .env file at 0940
+* error resolved at 0948
 * 

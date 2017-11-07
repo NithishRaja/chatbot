@@ -4,6 +4,7 @@ const path = require('path');
 var bodyparser = require("body-parser");
 var session = require('cookie-session');
 var cookieParser = require("cookie-parser");
+var dotenv = require("dotenv");
 
 // importing local modules
 var configureViews = require("./views");
@@ -12,6 +13,9 @@ var configureMainDatabase = require("./database/mongoDB").connect;
 
 // initializing express app
 const app = express();
+
+// configure environment variables
+dotenv.config();
 
 // setting port value
 app.set("port", process.env.PORT || 5000);
