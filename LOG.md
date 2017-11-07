@@ -6,4 +6,6 @@
 * refactor api routes into separate middleware at 0931
 * error: dotenv does not read from .env file at 0940
 * error resolved at 0948
-* 
+* wrote code to initiate conversation at 0958
+* finished boilerplate code for sending and receiving text from chatbot api at 1017
+* **ended at 1017 on 07-11-2017**

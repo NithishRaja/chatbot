@@ -2,11 +2,6 @@ var ConversationV1 = require("watson-developer-cloud/conversation/v1");
 
 module.exports = function(req, res){
 
-  req.session.conversation = [];
-
-  console.log(process.env.IBM_WATSON_USERNAME);
-  console.log(process.env.IBM_WATSON_PASSWORD);
-
   var conversation = new ConversationV1({
     username: process.env.IBM_WATSON_USERNAME,
     password: process.env.IBM_WATSON_PASSWORD,
@@ -22,6 +17,9 @@ module.exports = function(req, res){
     if(error){
       res.status(500).json(error);
     }else{
+      req.session.conversationContext = response.context;
+      req.session.conversationStack = [{"source": "chatbot", "text": response.output.text}];
+      console.log(req.session);
       res.status(200).json(response);
     }
   });
