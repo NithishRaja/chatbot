@@ -1,5 +1,6 @@
 var ConversationV1 = require("watson-developer-cloud/conversation/v1");
 var mongo = require("mongodb");
+var _ = require("underscore");
 
 module.exports = function(req, res){
 
@@ -25,9 +26,10 @@ module.exports = function(req, res){
           parks.push(park.name);
         });
         response.context.parks = parks;
-        req.session.conversationContext = response.context;
+        req.session.conversationContext = _.clone(response.context);
+        console.log(JSON.stringify(response, null, 2));
         req.session.conversationStack = [{"source": "chatbot", "text": response.output.text}];
-        res.status(200).json(response);
+        res.status(200).json(req.session.conversationStack);
       });
     }
   });

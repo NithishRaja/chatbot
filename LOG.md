@@ -19,4 +19,25 @@
 * start writing code to save info inside database at 1804
 * finished code for updating database at 1823
 * wrote code to update parks in context at 1838
+* updated watson conversation api with park names and synonyms at 1852
+* wrote basic functionality for deciding what ti display at 1900
+* **ended at 07-11-2017**
+
+* **started at 1350 on 08-11-2017**
+* start to separate all functionality of `/api/sendMessage` into separate middleware at 1352
+* finished writing nodes in IBM for plants at 1505
+* **ended at 1505 on 08-11-2017**
+
+* **started at 1652 on 08-11-2017**
+* start writing code to identify response based on cardType at 1653
+* added code to update session variables upon new message at 1704
+* **ended at 1736 on 08-11-2017**
+
+* **started at 1848 on 08-11-2017**
+* error thrown: `TypeError: Cannot read property 'context' of undefined` at 1849
+* error resolved at 1851
+* start writing code to update conversationStack at 1851
+* finished writing middleware for `/api/newMessage` route at 1904
+* start refactoring middleware of `/api/newMessage` route depending upon functionality at 1905
+* separated code into functions at 1935
 * 
