@@ -47,4 +47,9 @@
 * finished code to format conversationStack at 1000
 * start separating functionality into multiple middleware at 1000
 * finished adding `/api/getConversation` route at 1012
+* **ended at 1016 on 09-11-2017**
+
+* **started at 1549 on 09-11-2017**
+* switched to client side
+* start writing boilerplate for markup at 1551
 * 
