@@ -13,6 +13,22 @@ export default class Main extends Component{
                               </div>;
   }
 
+  componentWillUpdate(nextProps){
+    if(nextProps.conversationStatus){
+      this._componentLayoutJSX = <div className="col-md-offset-3 col-md-6 panel panel-default">
+                                        <div className="panel-body">
+                                          {"conversation"}
+                                        </div>
+                                      </div>;
+    }else{
+      this._componentLayoutJSX = <div className="col-md-offset-3 col-md-6 panel panel-default">
+                                  <div className="panel-body">
+                                    <button id="start-conversation" className="col-md-offset-4 btn btn-primary">{"start conversation"}</button>
+                                  </div>
+                                </div>;
+    }
+  }
+
   render(){
 
     console.log(this.props.conversationStatus);

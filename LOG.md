@@ -58,4 +58,5 @@
 * start writing container for **Main** component at 1618
 * finished container at 1622
 * wrote action and reducer to track conversation status at 1628
-* 
+* wrote code to update **Main** component view upon change in conversation status at 1638
+* **ended at 1638 on 09-11-2017**
