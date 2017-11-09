@@ -57,4 +57,5 @@
 * finished event listener at 1617
 * start writing container for **Main** component at 1618
 * finished container at 1622
+* wrote action and reducer to track conversation status at 1628
 * 

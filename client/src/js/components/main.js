@@ -14,6 +14,9 @@ export default class Main extends Component{
   }
 
   render(){
+
+    console.log(this.props.conversationStatus);
+
     return(
       this._componentLayoutJSX
     );
@@ -25,6 +28,7 @@ export default class Main extends Component{
       .subscribe({
         next: (event) => {
           console.log("clicked");
+          this.props.updateConversationStatus(true);
         }
       });
   }
