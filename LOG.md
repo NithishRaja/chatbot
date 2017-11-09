@@ -46,4 +46,5 @@
 * start writing code to format conversationStack at 0927
 * finished code to format conversationStack at 1000
 * start separating functionality into multiple middleware at 1000
+* finished adding `/api/getConversation` route at 1012
 * 

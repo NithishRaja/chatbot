@@ -8,4 +8,6 @@ module.exports = function(app){
   app.route("/api/newMessage")
     .get(middleware.api.sendMessage);
 
+  app.route("/api/getConversation")
+    .get(middleware.api.getConversation);
 }
