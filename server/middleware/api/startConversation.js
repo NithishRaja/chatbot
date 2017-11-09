@@ -28,7 +28,13 @@ module.exports = function(req, res){
         response.context.parks = parks;
         req.session.conversationContext = _.clone(response.context);
         console.log(JSON.stringify(response, null, 2));
-        req.session.conversationStack = [{"source": "chatbot", "text": response.output.text}];
+        response.output.text.forEach(function(text, index){
+          if(index===0){
+            req.session.conversationStack = [{"source": "chatbot", "text": text}];
+          }else{
+            req.session.conversationStack.push({"source": "chatbot", "text": text});
+          }
+        });
         res.status(200).json(req.session.conversationStack);
       });
     }

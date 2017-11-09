@@ -22,7 +22,7 @@ const updateConversationStack = function(stack, object, callback){
 
 module.exports = function(req, res, next){
 
-  const userMessage = "tell me about animals in sariska";
+  const userMessage = "tell me about sariska";
 
   updateConversationStack(req.session.conversationStack, {"source": "user", "text": userMessage});
 
@@ -64,7 +64,11 @@ module.exports = function(req, res, next){
                 card = result;
               });
             }
-            updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": response.output.text, cardType: response.output.cardType, cardList: card}, function(){
+            console.log(JSON.stringify(response, null, 2));
+            response.output.text.forEach(function(text){
+              updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": text});
+            });
+            updateConversationStack(req.session.conversationStack, {"source": "chatbot", cardType: response.output.cardType, cardList: card}, function(){
               res.status(200).json(req.session.conversationStack);
             });
           });
@@ -79,7 +83,11 @@ module.exports = function(req, res, next){
                 card = result;
               });
             }
-            updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": response.output.text, cardType: response.output.cardType, cardList: card}, function(){
+            console.log(JSON.stringify(response, null, 2));
+            response.output.text.forEach(function(text){
+              updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": text});
+            });
+            updateConversationStack(req.session.conversationStack, {"source": "chatbot", cardType: response.output.cardType, cardList: card}, function(){
               res.status(200).json(req.session.conversationStack);
             });
           });
@@ -95,21 +103,26 @@ module.exports = function(req, res, next){
               });
             }
             console.log(JSON.stringify(response, null, 2));
-            updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": response.output.text, cardType: response.output.cardType, cardList: card}, function(){
+            response.output.text.forEach(function(text){
+              updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": text});
+            });
+            updateConversationStack(req.session.conversationStack, {"source": "chatbot", cardType: response.output.cardType, cardList: card}, function(){
               res.status(200).json(req.session.conversationStack);
             });
           });
         }else{
           console.log(JSON.stringify(response, null, 2));
-          updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": response.output.text}, function(){
-            res.status(200).json(req.session.conversationStack);
+          response.output.text.forEach(function(text){
+            updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": text});
           });
+          res.status(200).json(req.session.conversationStack);
         }
       }else{
         console.log(JSON.stringify(response, null, 2));
-        updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": response.output.text}, function(){
-          res.status(200).json(req.session.conversationStack);
+        response.output.text.forEach(function(text){
+          updateConversationStack(req.session.conversationStack, {"source": "chatbot", "text": text});
         });
+        res.status(200).json(req.session.conversationStack);
       }
     }
   });

@@ -21,7 +21,7 @@
 * wrote code to update parks in context at 1838
 * updated watson conversation api with park names and synonyms at 1852
 * wrote basic functionality for deciding what ti display at 1900
-* **ended at 07-11-2017**
+* **ended at 1900 07-11-2017**
 
 * **started at 1350 on 08-11-2017**
 * start to separate all functionality of `/api/sendMessage` into separate middleware at 1352
@@ -40,4 +40,10 @@
 * finished writing middleware for `/api/newMessage` route at 1904
 * start refactoring middleware of `/api/newMessage` route depending upon functionality at 1905
 * separated code into functions at 1935
+* **ended at 1944 on 08-11-2017**
+
+* **started at 0926 on 09-11-2017**
+* start writing code to format conversationStack at 0927
+* finished code to format conversationStack at 1000
+* start separating functionality into multiple middleware at 1000
 * 
