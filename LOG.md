@@ -52,4 +52,9 @@
 * **started at 1549 on 09-11-2017**
 * switched to client side
 * start writing boilerplate for markup at 1551
+* added boilerplate markup for main component at 1613
+* start adding event listeners for start conversation button at 1614
+* finished event listener at 1617
+* start writing container for **Main** component at 1618
+* finished container at 1622
 * 
