@@ -73,4 +73,5 @@
 * finished **Form** component at 1501
 * start using redux to manage messageList at 1503
 * finished using redux to manage messageList at 1505
-* 
+* wrote code to listen to form submission at 1510
+* **ended at 1510 10-11-2017**

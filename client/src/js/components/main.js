@@ -46,7 +46,6 @@ export default class Main extends Component{
       .debounceTime("500")
       .subscribe({
         next: (event) => {
-          console.log("clicked");
           this.props.updateConversationStatus(true);
         }
       });
