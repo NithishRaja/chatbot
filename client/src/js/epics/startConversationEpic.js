@@ -1,10 +1,9 @@
-import * as messageList  from "./../../info/response.json";
 import Rx from "rxjs/Rx";
 
 export default function(action$){
   return action$.ofType("START_CONVERSATION")
     .switchMap(() => {
-      return Rx.Observable.of({response: messageList});
+      return Rx.Observable.ajax({url:"/api/startConversation", method:"GET", responseType:"json"});
     })
     .pluck("response")
     .map(response => {
