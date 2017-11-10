@@ -78,4 +78,5 @@
 
 * **started at 1736 on 10-11-2017**
 * added styles to app at 1838
+* start writing epic to get messages at 1839
 * 

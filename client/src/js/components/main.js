@@ -8,6 +8,10 @@ export default class Main extends Component{
   constructor(props){
     super(props);
 
+    this.state = {
+      conversationStatus: false
+    };
+
     this._gettingMessagesAlertJSX = <div className="alert alert-info">{"Getting messages. Please wait..."}</div>;
 
     this._conversationCoverJSX = <div className="panel panel-default">
@@ -19,10 +23,10 @@ export default class Main extends Component{
     this._componentLayoutJSX = this._conversationCoverJSX;
   }
 
-  componentWillUpdate(nextProps){
-    if(nextProps.conversationStatus && nextProps.messageList===null){
+  componentWillUpdate(nextProps, nextState){
+    if(nextState.conversationStatus && nextProps.messageList===null){
       this._componentLayoutJSX = this._gettingMessagesAlertJSX;
-    }else if(nextProps.conversationStatus){
+    }else if(nextState.conversationStatus){
       this._componentLayoutJSX = <div className="panel panel-default">
                                   <div className="panel-body message-list">
                                     <Conversation messageList={this.props.messageList} />
@@ -48,7 +52,9 @@ export default class Main extends Component{
       .debounceTime("500")
       .subscribe({
         next: (event) => {
-          this.props.updateConversationStatus(true);
+          this.setState({
+            conversationStatus: !this.state.conversationStatus
+          });
         }
       });
   }
