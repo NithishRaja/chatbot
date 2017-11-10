@@ -10,21 +10,26 @@ export default class Card extends Component{
       expand: true
     };
 
-    this._cardJSX = <div className="panel panel-info">
+    this._cardJSX = <div className="chatbot panel panel-info">
                       <div className="panel-heading">
                         {this.props.card.name}
                       </div>
                       <div className="panel-body">
-                        <label className="label label-warning">{this.props.card.location}</label>
+                        {this.props.card.location.map((location, index) => <label key={index} className="label label-warning">{location}</label>)}
                         <img src={this.props.card.image} alt={this.props.card.name}/>
                         <p>{this.props.card.desc}</p>
                       </div>
                       <div className="panel-footer">
-                        <button id={`minimize-${this.props.card._id}`} className="btn btn-primary">{"minimize"}</button>
+                        <button id={`minimize-${this.props.card._id}`} className="col-md-offset-10 minimize btn btn-primary">{"minimize"}</button>
                       </div>
                     </div>;
 
-    this._minimizeCardJSX = <div className="well"><div className="alert alert-info">{this.props.card.name}</div><button id={`expand-${this.props.card._id}`} className="btn btn-primary">{"expand"}</button></div>;
+    this._minimizeCardJSX = <div className="chatbot well">
+                              <div className="alert alert-info">
+                                {this.props.card.name}
+                              </div>
+                              <button id={`expand-${this.props.card._id}`} className="col-md-offset-10 btn btn-primary">{"expand"}</button>
+                            </div>;
 
     this._componentLayoutJSX = this._cardJSX;
 

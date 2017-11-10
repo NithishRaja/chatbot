@@ -6,11 +6,11 @@ export default class Form extends Component{
   constructor(props){
     super(props);
 
-    this._componentLayoutJSX = <div className="form-inline">
-                                <div className="form-group">
+    this._componentLayoutJSX = <div>
+                                <div className="form-group col-md-10">
                                   <input type="text" id="message" className="form-control" placeholder="type a message" />
-                                  <button id="send" className="btn btn-success">{"send"}</button>
                                 </div>
+                                <button id="send" className="btn btn-success">{"send"}</button>
                               </div>;
 
   }

@@ -75,3 +75,7 @@
 * finished using redux to manage messageList at 1505
 * wrote code to listen to form submission at 1510
 * **ended at 1510 10-11-2017**
+
+* **started at 1736 on 10-11-2017**
+* added styles to app at 1838
+* 

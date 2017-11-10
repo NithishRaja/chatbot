@@ -7,7 +7,7 @@ export default class Text extends Component{
 
     this._componentClassName = this.props.source==="chatbot"?"alert alert-info":"alert alert-warning";
 
-    this._componentLayoutJSX = <div className={this._componentClassName}>{this.props.text}</div>;
+    this._componentLayoutJSX = <div className={`${this.props.source} ${this._componentClassName}`}>{this.props.text}</div>;
 
   }
 
