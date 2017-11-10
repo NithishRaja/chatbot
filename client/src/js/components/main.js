@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Rx from "rxjs/Rx";
 import Conversation from "./conversation";
 import Form from "./form";
-import * as messageList  from "./../../info/response.json";
 
 export default class Main extends Component{
 
@@ -20,7 +19,7 @@ export default class Main extends Component{
     if(nextProps.conversationStatus){
       this._componentLayoutJSX = <div className="col-md-offset-3 col-md-6 panel panel-default">
                                   <div className="panel-body">
-                                    <Conversation messageList={messageList} />
+                                    <Conversation messageList={this.props.messageList} />
                                   </div>
                                   <div className="panel-footer">
                                     <Form />

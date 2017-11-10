@@ -71,4 +71,6 @@
 * wrote functionality to expand/minimize **Card** at 1453
 * started writing form component at 1456
 * finished **Form** component at 1501
+* start using redux to manage messageList at 1503
+* finished using redux to manage messageList at 1505
 * 

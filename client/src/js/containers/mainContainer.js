@@ -5,7 +5,8 @@ import updateConversationStatus from "./../actions/updateConversationStatus";
 
 const mapStateToProps = (state) => {
   return {
-    conversationStatus: state.conversationStatus
+    conversationStatus: state.conversationStatus,
+    messageList: state.messageList
   }
 };
 
