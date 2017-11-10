@@ -6,7 +6,7 @@ module.exports = function(app){
     .get(middleware.api.startConversation);
 
   app.route("/api/newMessage")
-    .get(middleware.api.sendMessage);
+    .post(middleware.api.sendMessage);
 
   app.route("/api/getConversation")
     .get(middleware.api.getConversation);

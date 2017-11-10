@@ -83,4 +83,6 @@
 * wrote `newMessage` action and `newMessageEpic` epic to send and receive message at 1917
 * start writing AJAX calls at 1923
 * finished AJAX calls to server at 1933
-* 
+* switch to server side
+* made `api/newMessage` route listen to post requests at 1936
+*

@@ -22,7 +22,7 @@ const updateConversationStack = function(stack, object, callback){
 
 module.exports = function(req, res, next){
 
-  const userMessage = "tell me about sariska";
+  const userMessage = req.body.text;
 
   updateConversationStack(req.session.conversationStack, {"source": "user", "text": userMessage});
 
