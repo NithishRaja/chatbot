@@ -69,4 +69,6 @@
 * wrote card component at 1427
 * added boilerplate for minimizing card in **Card** at 1436
 * wrote functionality to expand/minimize **Card** at 1453
+* started writing form component at 1456
+* finished **Form** component at 1501
 * 
