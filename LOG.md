@@ -79,4 +79,6 @@
 * **started at 1736 on 10-11-2017**
 * added styles to app at 1838
 * start writing epic to get messages at 1839
+* wrote `startConversation` action and `startConversationEpic` epic to initiate conversation at 1859
+* wrote `newMessage` action and `newMessageEpic` epic to send and receive message at 1917
 * 

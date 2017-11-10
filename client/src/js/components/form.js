@@ -29,7 +29,8 @@ export default class Form extends Component{
           if(document.querySelector("#message").value===""){
             event.preventDefault();
           }else{
-            console.log(document.querySelector("#message").value);
+            this.props.newMessage(document.querySelector("#message").value);
+            document.querySelector("#message").value="";
           }
         }
       });

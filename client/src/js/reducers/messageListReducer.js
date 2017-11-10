@@ -1,6 +1,7 @@
-import * as messageList  from "./../../info/response.json";
 
-export default function(state=messageList, action){
+
+export default function(state=null, action){
+  
   switch(action.type){
     case "UPDATE_MESSAGE_LIST":
       return action.payload;

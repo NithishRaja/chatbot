@@ -23,16 +23,26 @@ export default class Main extends Component{
     this._componentLayoutJSX = this._conversationCoverJSX;
   }
 
+  componentWillMount(){
+    if(this.props.messageList===null){
+      this.props.startConversation();
+    }
+  }
+
   componentWillUpdate(nextProps, nextState){
     if(nextState.conversationStatus && nextProps.messageList===null){
       this._componentLayoutJSX = this._gettingMessagesAlertJSX;
     }else if(nextState.conversationStatus){
       this._componentLayoutJSX = <div className="panel panel-default">
+                                  <div className="panel-heading">
+                                    {"CHATBOT"}
+                                    <button id="refresh" className="btn btn-primary">{"refresh"}</button>
+                                  </div>
                                   <div className="panel-body message-list">
-                                    <Conversation messageList={this.props.messageList} />
+                                    <Conversation messageList={nextProps.messageList} />
                                   </div>
                                   <div className="panel-footer">
-                                    <Form />
+                                    <Form newMessage={nextProps.newMessage} />
                                   </div>
                                 </div>;
     }else{
@@ -57,6 +67,18 @@ export default class Main extends Component{
           });
         }
       });
+  }
+
+  componentDidUpdate(){
+    if(this.state.conversationStatus && this.props.messageList!==null){
+      Rx.Observable.fromEvent(document.querySelector("#refresh"), "click")
+        .debounceTime(500)
+        .subscribe({
+          next: (event) => {
+            this.props.startConversation();
+          }
+        });
+    }
   }
 
 }
