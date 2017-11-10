@@ -64,4 +64,8 @@
 * **started at 1335 on 10-11-2017**
 * start writing conversation component at 1337
 * wrote basic boilerplate for **Conversation** at 1344
-*
+* wrote Text component to display chatbot and user text at 1411
+* added styles to **Text** at 1415
+* wrote card component at 1427
+* added boilerplate for minimizing card in **Card** at 1436
+* 
