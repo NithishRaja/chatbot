@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Rx from "rxjs/Rx";
+import Conversation from "./conversation";
+var messageList  = require("./../../info/response.json");
 
 export default class Main extends Component{
 
@@ -17,7 +19,7 @@ export default class Main extends Component{
     if(nextProps.conversationStatus){
       this._componentLayoutJSX = <div className="col-md-offset-3 col-md-6 panel panel-default">
                                         <div className="panel-body">
-                                          {"conversation"}
+                                          <Conversation messageList={messageList} />
                                         </div>
                                       </div>;
     }else{
@@ -30,8 +32,6 @@ export default class Main extends Component{
   }
 
   render(){
-
-    console.log(this.props.conversationStatus);
 
     return(
       this._componentLayoutJSX

@@ -60,3 +60,8 @@
 * wrote action and reducer to track conversation status at 1628
 * wrote code to update **Main** component view upon change in conversation status at 1638
 * **ended at 1638 on 09-11-2017**
+
+* **started at 1335 on 10-11-2017**
+* start writing conversation component at 1337
+* wrote basic boilerplate for **Conversation** at 1344
+*

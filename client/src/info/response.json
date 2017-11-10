@@ -1,0 +1,26 @@
+[
+  {"source":"chatbot",
+    "text":"What national park are you interested in learning about?"
+  },
+  {
+    "source":"user",
+    "text":"tell me about sariska"
+  },
+  {
+    "source":"chatbot",
+    "text":"here is info about Sariska Tiger Reserve"
+  },
+  {
+    "source":"chatbot",
+    "cardType":"park",
+    "cardList":[
+      {
+        "_id":"5a01aa52c88f610bbf3060c8",
+        "name":"Sariska Tiger Reserve",
+        "location":" Alwar district of the state of Rajasthan, India",
+        "desc":"Sariska Tiger Reserve is a national park and tiger reserve. This area was a hunting preserve of the Alwar state and it was declared a wildlife reserve in 1955. It was given the status of a tiger reserve making it a part of India's Project Tiger in 1978. The wildlife sanctuary covers an area of 866 km2. The reserve was declared a national park in 1982, with a total area of about 273.8 km2. It is the first reserve in the world to have successfully relocated tigers.",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Deer_in_Sariska_Reserve.jpg/300px-Deer_in_Sariska_Reserve.jpg"
+      }
+    ]
+  }
+]
