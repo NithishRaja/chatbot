@@ -6,8 +6,12 @@ export default class Card extends Component{
   constructor(props){
     super(props);
 
+    this.state = {
+      expand: true
+    };
+
     this._cardJSX = <div className="panel panel-info">
-                      <div className="panel-head">
+                      <div className="panel-heading">
                         {this.props.card.name}
                       </div>
                       <div className="panel-body">
@@ -16,19 +20,25 @@ export default class Card extends Component{
                         <p>{this.props.card.desc}</p>
                       </div>
                       <div className="panel-footer">
-                        <button className="btn btn-primary">{"minimize"}</button>
+                        <button id={`minimize-${this.props.card._id}`} className="btn btn-primary">{"minimize"}</button>
                       </div>
                     </div>;
 
-    this._minimizeCardJSX = <div className="alert alert-info">{this.props.card.name}<button id={this.props.card.id} className="btn btn-primary">{"expand"}</button></div>;
+    this._minimizeCardJSX = <div className="well"><div className="alert alert-info">{this.props.card.name}</div><button id={`expand-${this.props.card._id}`} className="btn btn-primary">{"expand"}</button></div>;
 
     this._componentLayoutJSX = this._cardJSX;
 
   }
 
-  render(){
+  componentWillUpdate(nextProps, nextState){
+    if(nextState.expand){
+      this._componentLayoutJSX = this._cardJSX;
+    }else{
+      this._componentLayoutJSX = this._minimizeCardJSX;
+    }
+  }
 
-    console.log(this.props.card);
+  render(){
 
     return(
       this._componentLayoutJSX
@@ -37,14 +47,40 @@ export default class Card extends Component{
 
   componentDidMount(){
 
-    Rx.Observable.fromEvent(document.querySelector(`#${this.props.card.id}`), "click")
+    Rx.Observable.fromEvent(document.querySelector(`#minimize-${this.props.card._id}`), "click")
       .debounceTime(500)
       .subscribe({
         next: (event) => {
-          console.log("clicked");
+          this.setState({
+            expand: !this.state.expand
+          });
         }
       });
 
+  }
+
+  componentDidUpdate(){
+    if(this.state.expand){
+      Rx.Observable.fromEvent(document.querySelector(`#minimize-${this.props.card._id}`), "click")
+        .debounceTime(500)
+        .subscribe({
+          next: (event) => {
+            this.setState({
+              expand: !this.state.expand
+            });
+          }
+        });
+    }else{
+      Rx.Observable.fromEvent(document.querySelector(`#expand-${this.props.card._id}`), "click")
+        .debounceTime(500)
+        .subscribe({
+          next: (event) => {
+            this.setState({
+              expand: !this.state.expand
+            });
+          }
+        });
+    }
   }
 
 }
