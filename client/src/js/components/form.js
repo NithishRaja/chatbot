@@ -22,6 +22,7 @@ export default class Form extends Component{
   }
 
   componentDidMount(){
+    // event listener to listen to form submission
     Rx.Observable.fromEvent(document.querySelector("#send"), "click")
       .debounceTime(500)
       .subscribe({

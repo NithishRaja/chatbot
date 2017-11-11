@@ -24,12 +24,14 @@ export default class Main extends Component{
   }
 
   componentWillMount(){
+    // if no messages are present, get new messages
     if(this.props.messageList===null){
       this.props.startConversation();
     }
   }
 
   componentWillUpdate(nextProps, nextState){
+    // display the appropriate component
     if(nextState.conversationStatus && nextProps.messageList===null){
       this._componentLayoutJSX = this._gettingMessagesAlertJSX;
     }else if(nextState.conversationStatus){
@@ -58,6 +60,7 @@ export default class Main extends Component{
   }
 
   componentDidMount(){
+    // event listener to start conversation
     Rx.Observable.fromEvent(document.querySelector("#start-conversation"), "click")
       .debounceTime("500")
       .subscribe({
@@ -71,6 +74,7 @@ export default class Main extends Component{
 
   componentDidUpdate(){
     if(this.state.conversationStatus && this.props.messageList!==null){
+      // event listener to refresh conversation
       Rx.Observable.fromEvent(document.querySelector("#refresh"), "click")
         .debounceTime(500)
         .subscribe({

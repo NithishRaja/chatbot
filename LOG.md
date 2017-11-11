@@ -106,4 +106,6 @@
 * app works as expected at 1048
 * start adding comments to server side code at 1049
 * finished adding comments to server sie code at 1059
+* start adding comments to client side code at 1102
+* finished adding comments to client side code at 1111
 * 

@@ -64,6 +64,7 @@ export default class Card extends Component{
 
   componentDidMount(){
 
+    // event listener for minimizing card
     Rx.Observable.fromEvent(document.querySelector(`#minimize-${this.props.card._id}`), "click")
       .debounceTime(500)
       .subscribe({
@@ -78,6 +79,7 @@ export default class Card extends Component{
 
   componentDidUpdate(){
     if(this.state.expand){
+      // event listener for minimizing card
       Rx.Observable.fromEvent(document.querySelector(`#minimize-${this.props.card._id}`), "click")
         .debounceTime(500)
         .subscribe({
@@ -88,6 +90,7 @@ export default class Card extends Component{
           }
         });
     }else{
+      // event listener for expanding card
       Rx.Observable.fromEvent(document.querySelector(`#expand-${this.props.card._id}`), "click")
         .debounceTime(500)
         .subscribe({
