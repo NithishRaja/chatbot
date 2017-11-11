@@ -15,6 +15,8 @@
 
 ## running app
 
+* start mongodb server
+* start redis server
 * run `npm start`, starts server on localhost port 5000
 * go to client directory and run `npm start`, starts server on port 3000
 * requests sent from client uses `proxy` to reach server

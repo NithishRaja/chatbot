@@ -30,3 +30,7 @@ img{
   height: 500px;
   overflow-y: scroll;
 }
+
+.app-heading{
+  font-weight: 700;
+}

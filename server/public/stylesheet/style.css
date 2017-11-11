@@ -1,0 +1,36 @@
+#root{
+  padding-top: 40px;
+}
+
+.label{
+  margin-left: 0.5%;
+}
+
+p{
+  text-align: justify;
+  text-indent: 2%;
+  margin: 2%;
+}
+
+img{
+  width:-webkit-fill-available;
+  margin: 2%;
+}
+
+.user{
+  text-align: right;
+  margin-left: 7%;
+}
+
+.chatbot{
+  margin-right: 7%;
+}
+
+.message-list{
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.app-heading{
+  font-weight: 700;
+}

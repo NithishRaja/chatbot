@@ -94,4 +94,13 @@
 * error resolved at 0914
 * error thorwn: `TypeError: Cannot read property 'push' of undefined` at 0917
 * run `npm run build` at 0925
+* figured out reason for error at 0935
+* after a few messages conversationStack length exceeds 4096. hence cookie is not saved and error is thrown
+* possible fix is to use a database for session storage
+* updated styles at 0946
+* **ended at 0946 on 11-11-2017**
+
+* **started at 1010 on 11-11-2017**
+* switched from `cookie-sessions` to `node-redis-session` at 1014
+* error resolved at 1015
 * 

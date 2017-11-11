@@ -34,9 +34,9 @@ export default class Main extends Component{
       this._componentLayoutJSX = this._gettingMessagesAlertJSX;
     }else if(nextState.conversationStatus){
       this._componentLayoutJSX = <div className="panel panel-default">
-                                  <div className="panel-heading">
+                                  <div className="app-heading panel-heading">
                                     {"CHATBOT"}
-                                    <button id="refresh" className="btn btn-primary">{"refresh"}</button>
+                                    <button id="refresh" className="col-md-offset-9 btn btn-primary">{"refresh"}</button>
                                   </div>
                                   <div className="panel-body message-list">
                                     <Conversation messageList={nextProps.messageList} />

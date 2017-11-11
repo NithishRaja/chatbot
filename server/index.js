@@ -2,9 +2,9 @@
 const express = require('express');
 const path = require('path');
 var bodyparser = require("body-parser");
-var session = require('cookie-session');
 var cookieParser = require("cookie-parser");
 var dotenv = require("dotenv");
+var redisSession = require('node-redis-session');
 
 // importing local modules
 var configureViews = require("./views");
@@ -22,7 +22,7 @@ app.set("port", process.env.PORT || 5000);
 
 // setting up cookies and sessions
 app.use(cookieParser("cookie-parser"));
-app.use(session({keys:["mykey"]}));
+app.use(redisSession());
 
 // using body-parser to read post info
 app.use(bodyparser.urlencoded({extended:true}));
