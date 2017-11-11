@@ -108,4 +108,5 @@
 * finished adding comments to server sie code at 1059
 * start adding comments to client side code at 1102
 * finished adding comments to client side code at 1111
+* updated README.md in client side and server side at 1116
 * 
