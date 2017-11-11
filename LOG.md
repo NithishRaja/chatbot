@@ -85,4 +85,13 @@
 * finished AJAX calls to server at 1933
 * switch to server side
 * made `api/newMessage` route listen to post requests at 1936
-*
+* error: new messages are not displayed at 1939
+* error resolved. componentWillUpdate was missing in **Conversation** at 1946
+* error thorwn: `TypeError: Cannot read property 'map' of undefined` at 1948
+* **ended at 2006 on 10-11-2017**
+
+* **started at 0914 on 11-11-2017**
+* error resolved at 0914
+* error thorwn: `TypeError: Cannot read property 'push' of undefined` at 0917
+* run `npm run build` at 0925
+* 

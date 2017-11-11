@@ -10,12 +10,24 @@ export default class Card extends Component{
       expand: true
     };
 
+    if(this.props.cardType==="park"){
+      this._cardLabelJSX = <ul className="list-inline list-unstyled">
+                            {this.props.card.location.map((location, index) => <li key={index}><label className="label label-warning">{location}</label></li>)}
+                          </ul>;
+    }else{
+      this._cardLabelJSX = <ul className="list-inline list-unstyled">
+                            <li>
+                              <label className="label label-warning">{this.props.card.park}</label>
+                            </li>
+                          </ul>;
+    }
+
     this._cardJSX = <div className="chatbot panel panel-info">
                       <div className="panel-heading">
                         {this.props.card.name}
                       </div>
                       <div className="panel-body">
-                        {this.props.card.location.map((location, index) => <label key={index} className="label label-warning">{location}</label>)}
+                        {this._cardLabelJSX}
                         <img src={this.props.card.image} alt={this.props.card.name}/>
                         <p>{this.props.card.desc}</p>
                       </div>

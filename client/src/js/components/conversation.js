@@ -23,6 +23,21 @@ export default class Conversation extends Component{
 
   }
 
+  componentWillUpdate(nextProps){
+    this._messageListJSX = <ul className="list-group list-unstyled">
+                            {nextProps.messageList.map((message, index) => {
+                              if(message.text){
+                                return <li key={index}><Text text={message.text} source={message.source} /></li>
+                              }else if(message.cardType){
+                                return <li key={index}>{message.cardList.map(card => <Card key={card._id} cardType={message.cardType} card={card} />)}</li>
+                              }else{
+                                return <li key={index}>{"there was error in displaying this message"}</li>
+                              }
+                            })}
+                          </ul>;
+    this._componentLayoutJSX = this._messageListJSX;
+  }
+
   render(){
     return(
       this._componentLayoutJSX
