@@ -103,4 +103,7 @@
 * **started at 1010 on 11-11-2017**
 * switched from `cookie-sessions` to `node-redis-session` at 1014
 * error resolved at 1015
+* app works as expected at 1048
+* start adding comments to server side code at 1049
+* finished adding comments to server sie code at 1059
 * 
