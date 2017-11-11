@@ -109,4 +109,5 @@
 * start adding comments to client side code at 1102
 * finished adding comments to client side code at 1111
 * updated README.md in client side and server side at 1116
-* 
+* include bootstrap-theme for better styles at 1118
+* **ended at 1118 on 11-11-2017**
