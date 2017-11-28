@@ -15,6 +15,12 @@
 
 ## running app
 
+* create .env file in root directory and include the following
+  ```
+  IBM_WATSON_USERNAME=<YOUR_USERNAME_HERE>
+  IBM_WATSON_PASSWORD=<YOUR_PASSWORD_HERE>
+  IBM_WATSON_WORKSPACE_ID=<YOUR_WORKSPACE_ID_HERE>
+  ```
 * start mongodb server
 * start redis server
 * run `npm start`, starts server on localhost port 5000
