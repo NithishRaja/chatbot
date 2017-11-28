@@ -1,4 +1,5 @@
-# README
+# CHATBOT
+Application for basic chatbot using the IBM watson conversation service
 
 ## Initialization
 
