@@ -5,6 +5,8 @@ var bodyparser = require("body-parser");
 var cookieParser = require("cookie-parser");
 var dotenv = require("dotenv");
 var redisSession = require('node-redis-session');
+var Redis = require("ioredis");
+var redis = new Redis({ host: 'pub-redis-16146.eu-central-1-1.1.ec2.redislabs.com', port: 16146 });
 
 // importing local modules
 var configureViews = require("./views");
@@ -22,7 +24,7 @@ app.set("port", process.env.PORT || 5000);
 
 // setting up cookies and sessions
 app.use(cookieParser("cookie-parser"));
-app.use(redisSession());
+app.use(redisSession({ redisClient: redis }));
 
 // using body-parser to read post info
 app.use(bodyparser.urlencoded({extended:true}));

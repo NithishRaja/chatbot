@@ -119,4 +119,6 @@
 * install `redis` at 1457
 * wrote code to implement `redis`, `express-session` and `connect-redis` at 1459
 * removed `redis`, `express-session` and `connect-redis` at 1503
+* install `ioredis` and use it as client for `node-redis-session` at 1518
+* session now uses live redis databasee for storage at 1518
 * 
