@@ -16,7 +16,7 @@ export default class Main extends Component{
 
     this._conversationCoverJSX = <div className="panel panel-default">
                                   <div className="panel-body">
-                                    <button id="start-conversation" className="col-md-offset-4 btn btn-primary">{"start conversation"}</button>
+                                    <button id="start-conversation" className="col-xs-offset-3 col-md-offset-4 btn btn-primary">{"start conversation"}</button>
                                   </div>
                                 </div>;
 
@@ -38,7 +38,7 @@ export default class Main extends Component{
       this._componentLayoutJSX = <div className="panel panel-default">
                                   <div className="app-heading panel-heading">
                                     {"CHATBOT"}
-                                    <button id="refresh" className="col-md-offset-9 btn btn-primary">{"refresh"}</button>
+                                    <button id="refresh" className="col-xs-offset-5 col-md-offset-9 btn btn-primary">{"refresh"}</button>
                                   </div>
                                   <div className="panel-body message-list">
                                     <Conversation messageList={nextProps.messageList} />

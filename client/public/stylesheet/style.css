@@ -1,5 +1,7 @@
 #root{
   padding-top: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .label{
@@ -29,6 +31,13 @@ img{
 .message-list{
   height: 500px;
   overflow-y: scroll;
+}
+
+@media screen and (max-width: 500px){
+  .message-list{
+    height: 300px;
+    overflow-y: scroll;
+  }
 }
 
 .app-heading{
