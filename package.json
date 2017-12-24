@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "test": "mocha ./server/tests/index.js ./server/index.js -w",
-    "start": "nodemon index.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build && npm prune --production"
+    "devstart": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "body-parser": "~1.17.1",

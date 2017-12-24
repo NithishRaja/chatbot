@@ -111,3 +111,7 @@
 * updated README.md in client side and server side at 1116
 * include bootstrap-theme for better styles at 1118
 * **ended at 1118 on 11-11-2017**
+
+* **started at 1426 on 24-12-2017**
+* add new scripts to package.json at 1431
+* 
