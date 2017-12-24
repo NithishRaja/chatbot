@@ -8,7 +8,7 @@ module.exports = {
       return;
     }
     // connection to mongo database
-    mongoClient.connect("mongodb://localhost:27017/CHATBOT_DATABASE", function(err, db){
+    mongoClient.connect("mongodb://chatbot-admin:chatbot-password@chatbot-database-shard-00-00-t8uci.mongodb.net:27017,chatbot-database-shard-00-01-t8uci.mongodb.net:27017,chatbot-database-shard-00-02-t8uci.mongodb.net:27017/test?ssl=true&replicaSet=chatbot-database-shard-0&authSource=admin", function(err, db){
       if(err!==null){
         throw err;
       }

@@ -114,4 +114,9 @@
 
 * **started at 1426 on 24-12-2017**
 * add new scripts to package.json at 1431
+* add live database connection at 1445
+* install `express-session` and `connect-redis` at 1455
+* install `redis` at 1457
+* wrote code to implement `redis`, `express-session` and `connect-redis` at 1459
+* removed `redis`, `express-session` and `connect-redis` at 1503
 * 
